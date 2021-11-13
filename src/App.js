@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import DashboardIndex from "./pages/dashboard";
 
 export default function App() {
   return (
-    <div>
-      My App
+    <div  className="bg-black min-h-screen">
+      <DashboardIndex />
     </div>
-  )
+  );
 }

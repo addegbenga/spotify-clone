@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Search() {
+export default function CreatePlaylist() {
     return (
         <div>
-            Search
+            create playlist
         </div>
     )
 }
