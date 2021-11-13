@@ -1,9 +1,10 @@
 import { BsFillHeartFill } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
-
+const base = "/dashboard"
 export const navbarLinks = [
   {
     name: "Home",
+    link:base,
     svg: (
       <svg
         width="20"
@@ -21,6 +22,7 @@ export const navbarLinks = [
   },
   {
     name: "Search",
+    link: base + "/search",
     svg: (
       <svg
         width="20"
@@ -40,6 +42,7 @@ export const navbarLinks = [
   },
   {
     name: "Your Library",
+    link: base + "/library",
     svg: (
       <svg
         width="20"
@@ -57,10 +60,12 @@ export const navbarLinks = [
   },
   {
     name: "Create Playlist",
+    link: base + "/createplaylist",
     svg: <FaPlus size={11} color="black" />,
   },
   {
     name: "Liked Songs",
+    link: base + "/favourite",
     svg: <BsFillHeartFill size={11} className="text-white text-opacity-50" />,
   },
 ];

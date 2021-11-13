@@ -1,5 +1,6 @@
 import React from "react";
 import { navbarLinks } from "./utils";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -28,10 +29,25 @@ export default function Sidebar() {
                 : ""
             } ${
               index === 3 ? "mt-5" : ""
-            }  p-2.5 px-5 items-center  rounded transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70  group` }
+            }  p-2.5 px-5 items-center  rounded transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70  group`}
           >
-            <div className={`${index === 3 ? "bg-white group-hover:bg-white bg-opacity-60 p-1.5  -ml-0.5" :""} ${index === 4 ? "bg-gradient-to-br from-purple-900 via-purple-500 to-purple-200  group-hover:bg-white  bg-opacity-60 p-1.5 -ml-0.5" :""}  transition duration-400 ease-in-out`}>{item.svg}</div>
-            <h1 className=" text-sm ml-4  "> {item.name}</h1>
+            <div
+              className={`${
+                index === 3
+                  ? "bg-white group-hover:bg-white bg-opacity-60 p-1.5  -ml-0.5"
+                  : ""
+              } ${
+                index === 4
+                  ? "bg-gradient-to-br from-purple-900 via-purple-500 to-purple-200  group-hover:bg-white  bg-opacity-60 p-1.5 -ml-0.5"
+                  : ""
+              }  transition duration-400 ease-in-out`}
+            >
+              {item.svg}
+            </div>
+            <Link to={item.link} className=" text-sm ml-4  ">
+              {" "}
+              {item.name}
+            </Link>
           </button>
         ))}
 

@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/dashboard/Navbar";
-import Sidebar from "../../components/dashboard/Sidebar";
 import { BsFillPlayFill } from "react-icons/bs";
 import {
   focus,
@@ -13,8 +11,6 @@ import {
 export default function Home() {
   return (
     <>
-      <Sidebar />
-      <Navbar />
       {/* show playlist section start */}
       <div
         style={{
