@@ -3,8 +3,8 @@ import { navbarLinks } from "./utils";
 
 export default function Sidebar() {
   return (
-    <div className="w-64 ">
-      <div className="m-1.5">
+    <div className="w-64 fixed bg-black z-20  h-screen overflow-y-auto ">
+      <div className="p-1.5">
         <div className="my-5 ml-3.5">
           <svg
             width="138"
@@ -30,7 +30,7 @@ export default function Sidebar() {
               index === 3 ? "mt-5" : ""
             }  p-2.5 px-5 items-center  rounded transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70  group` }
           >
-            <div className={`${index === 3 ? "bg-white group-hover:bg-white bg-opacity-60 p-1.5  -ml-0.5" :""} ${index === 4 ? "bg-white group-hover:bg-white  bg-opacity-60 p-1.5 -ml-0.5" :""}  transition duration-400 ease-in-out`}>{item.svg}</div>
+            <div className={`${index === 3 ? "bg-white group-hover:bg-white bg-opacity-60 p-1.5  -ml-0.5" :""} ${index === 4 ? "bg-gradient-to-br from-purple-900 via-purple-500 to-purple-200  group-hover:bg-white  bg-opacity-60 p-1.5 -ml-0.5" :""}  transition duration-400 ease-in-out`}>{item.svg}</div>
             <h1 className=" text-sm ml-4  "> {item.name}</h1>
           </button>
         ))}
