@@ -20,9 +20,18 @@ export default function Sidebar() {
           </svg>
         </div>
         {navbarLinks.map((item, index) => (
-          <button key={index} className={`flex w-full ${index === 0 ? "bg-white bg-opacity-20 text-white text-opacity-100" :""}  p-2.5 px-5 items-center  rounded transition duration-400 ease-in-out text-white text-opacity-70 hover:text-white hover:opacity-100`}>
-            {item.svg}
-            <h1 className=" text-sm ml-4"> {item.name}</h1>
+          <button
+            key={index}
+            className={`flex w-full ${
+              index === 0
+                ? "bg-white bg-opacity-20 text-white text-opacity-100"
+                : ""
+            } ${
+              index === 3 ? "mt-5" : ""
+            }  p-2.5 px-5 items-center  rounded transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70  group` }
+          >
+            <div className={`${index === 3 ? "bg-white group-hover:bg-white bg-opacity-60 p-1.5  -ml-0.5" :""} ${index === 4 ? "bg-white group-hover:bg-white  bg-opacity-60 p-1.5 -ml-0.5" :""}  transition duration-400 ease-in-out`}>{item.svg}</div>
+            <h1 className=" text-sm ml-4  "> {item.name}</h1>
           </button>
         ))}
 

@@ -1,10 +1,13 @@
+import { AiFillHeart } from "react-icons/ai";
+import { FaPlus } from "react-icons/fa";
+
 export const navbarLinks = [
   {
     name: "Home",
     svg: (
       <svg
-        width="23"
-        height="23"
+        width="20"
+        height="20"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +23,8 @@ export const navbarLinks = [
     name: "Search",
     svg: (
       <svg
-        width="23"
-        height="23"
+        width="20"
+        height="20"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +42,8 @@ export const navbarLinks = [
     name: "Your Library",
     svg: (
       <svg
-        width="23"
-        height="23"
+        width="20"
+        height="20"
         viewBox="0 0 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -51,5 +54,13 @@ export const navbarLinks = [
         />
       </svg>
     ),
+  },
+  {
+    name: "Create Playlist",
+    svg: <FaPlus size={11} color="black" />,
+  },
+  {
+    name: "Liked Songs",
+    svg: <AiFillHeart size={11} className="text-white text-opacity-50" />,
   },
 ];
