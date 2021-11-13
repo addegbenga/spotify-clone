@@ -73,7 +73,7 @@ export const editorsPick = [
   },
   {
     title: "Hot Hits Naija",
-    description: "Nigeria's hottest tracks.Cover:Reekado Banks",
+    description: "Nigeria's hottest Cover:Reekado Banks",
     cover: "/assets/hothits.jpeg",
   },
   {

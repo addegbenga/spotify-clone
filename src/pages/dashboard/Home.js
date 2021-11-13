@@ -34,13 +34,13 @@ export default function Home() {
               {editorsPick.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 flex flex-col justify-between bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
+                  className="p-4 flex flex-col  bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
                   <figure className="relative ">
                     <img
                       src={item.cover}
                       alt="playlist_editors_cover"
-                      className="shadow-2xl bg-black filter drop-shadow-2xl"
+                      className="shadow-2xl bg-black w-full object-cover filter drop-shadow-2xl"
                     />
                     <div
                       style={{ background: "#1ed760" }}
@@ -72,13 +72,13 @@ export default function Home() {
               {focus.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 flex flex-col justify-between bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
+                  className="p-4 flex flex-col bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
                   <figure className="relative ">
                     <img
                       src={item.cover}
                       alt="playlist_editors_cover"
-                      className="shadow-2xl bg-black filter drop-shadow-2xl"
+                      className="shadow-2xl bg-black object-cover w-full filter drop-shadow-2xl"
                     />
                     <div
                       style={{ background: "#1ed760" }}
@@ -110,13 +110,13 @@ export default function Home() {
               {mood.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 flex flex-col justify-between bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
+                  className="p-4 flex flex-col bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
-                  <figure className="relative ">
+                  <figure className="relative  ">
                     <img
                       src={item.cover}
                       alt="playlist_editors_cover"
-                      className="shadow-2xl bg-black filter drop-shadow-2xl"
+                      className="shadow-2xl bg-black object-cover filter  drop-shadow-2xl w-full"
                     />
                     <div
                       style={{ background: "#1ed760" }}
@@ -148,13 +148,13 @@ export default function Home() {
               {popular.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 flex flex-col justify-between bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
+                  className="p-4 flex flex-col  bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
                   <figure className="relative ">
                     <img
                       src={item.cover}
                       alt="playlist_editors_cover"
-                      className="shadow-2xl bg-black filter drop-shadow-2xl"
+                      className="shadow-2xl bg-black w-full object-cover filter drop-shadow-2xl"
                     />
                     <div
                       style={{ background: "#1ed760" }}
@@ -186,13 +186,13 @@ export default function Home() {
               {soundTrack.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 flex flex-col justify-between bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
+                  className="p-4 flex flex-col bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
                   <figure className="relative ">
                     <img
                       src={item.cover}
                       alt="playlist_editors_cover"
-                      className="shadow-2xl bg-black filter drop-shadow-2xl"
+                      className="shadow-2xl bg-black w-full filter drop-shadow-2xl"
                     />
                     <div
                       style={{ background: "#1ed760" }}

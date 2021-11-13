@@ -5,8 +5,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"),
+    url(./fonts/font3/Circular\ Std\ Bold/bold.woff) format("woff");
+  font-weight: 800;
+  font-style: bold;
+  font-display: block;
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+     
+    'embedded-opentype', and 'svg' */
+}
+
+
 * {
-  font-family: "Noto Sans Display", sans-serif;
+  /* font-family: "Noto Sans Display", sans-serif; */
+  font-family: "MyFont"
 }
 
 body{
