@@ -23,6 +23,19 @@
   /* font-family: "Noto Sans Display", sans-serif; */
   font-family: "MyFont"
 }
+/* .links-nav .active .home {
+  background: #0000ff;
+} */
+
+/* .active.test{
+  stroke: blue;
+}
+.active{
+  background-color: rgba(255, 255, 255, 0.13);
+} */
+/* .svg1:active{
+  fill: blue;
+} */
 
 body{
   overflow-x: hidden;

@@ -12,9 +12,11 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["active"],
+      backgroundColor: ["active", "group-focus", "focus"],
       scale: ["group-hover"],
       translate: ["group-hover"],
+      stroke: ['hover', 'focus'],
+      fill: ['hover', 'focus'],
     },
   },
   plugins: [],

@@ -1,23 +1,16 @@
 import { BsFillHeartFill } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
-const base = "/dashboard"
+const base = "/dashboard";
 export const navbarLinks = [
   {
     name: "Home",
-    link:base,
+    link: base,
     svg: (
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M37.0797 39H23.7955V25.5H16.2045V39H2.92029V10.9406L20 1L37.0797 10.8728V39Z"
-          fill="#ffff"
-        />
-      </svg>
+      <path
+        d="M37.0797 39H23.7955V25.5H16.2045V39H2.92029V10.9406L20 1L37.0797 10.8728V39Z"
+        // fill="#ffff"
+        // stroke="#fff"
+      />
     ),
   },
   {
@@ -60,12 +53,12 @@ export const navbarLinks = [
   },
   {
     name: "Create Playlist",
-    link: base + "/createplaylist",
+    link: base + "/create_playlist",
     svg: <FaPlus size={11} color="black" />,
   },
   {
     name: "Liked Songs",
-    link: base + "/favourite",
+    link: base + "/fav",
     svg: <BsFillHeartFill size={11} className="text-white text-opacity-50" />,
   },
 ];

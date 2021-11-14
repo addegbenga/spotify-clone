@@ -9,7 +9,7 @@ const LazyCreatePlaylist = React.lazy(() => import("./CreatePlaylist"));
 const base = "/dashboard";
 const routes = [
   {
-    path: base + "/",
+    path: base ,
     component: <LazyHome />,
   },
   {
