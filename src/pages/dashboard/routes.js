@@ -1,37 +1,55 @@
-import React from "react";
-const LazyHome = React.lazy(() => import("./Home.js"));
-const LazyLibrary = React.lazy(() => import("./Library.js"));
-const LazySearch = React.lazy(() => import("./Search.js"));
-const LazyLikedSong = React.lazy(() => import("./LikedSong.js"));
-const LazyPlaylist = React.lazy(() => import("./Playlist.js"));
-const LazyCreatePlaylist = React.lazy(() => import("./CreatePlaylist"));
+import React, { Suspense } from "react";
+import { useRoutes } from "react-router-dom";
+import NotFound from "./NotFound";
+const Home = React.lazy(() => import("./Home.js"));
+const Library = React.lazy(() => import("./Library.js"));
+const Search = React.lazy(() => import("./Search.js"));
+const LikedSong = React.lazy(() => import("./LikedSong.js"));
+const Playlist = React.lazy(() => import("./Playlist.js"));
+const CreatePlaylist = React.lazy(() => import("./CreatePlaylist"));
 
-const base = "/dashboard";
-const routes = [
-  {
-    path: base ,
-    component: <LazyHome />,
-  },
-  {
-    path: base + "/search",
-    component: <LazySearch />,
-  },
-  {
-    path: base + "/library",
-    component: <LazyLibrary />,
-  },
-  {
-    path: base + "/fav",
-    component: <LazyLikedSong />,
-  },
-  {
-    path: base + "/playlist/:playlistId",
-    component: <LazyPlaylist />,
-  },
-  {
-    path: base + "/create_playlist",
-    component: <LazyCreatePlaylist />,
-  },
-];
+export default function Index() {
+  let routes = [
+    {
+      path: "",
+      element: <Home />,
+    },
 
-export default routes;
+    {
+      path: "create_playlist",
+      element: <CreatePlaylist />,
+    },
+    {
+      path: "search",
+      element: <Search />,
+    },
+    {
+      path: "fav",
+      element: <LikedSong />,
+    },
+    {
+      path: "library",
+      element: <Library />,
+    },
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+  ];
+
+  let element = useRoutes(routes);
+
+  return (
+    <>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center text-white h-screen text-4xl">
+            Loading
+          </div>
+        }
+      >
+        {element}
+      </Suspense>
+    </>
+  );
+}

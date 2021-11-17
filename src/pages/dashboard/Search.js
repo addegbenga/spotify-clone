@@ -6,7 +6,7 @@ export default function Search() {
       {/* show playlist section start */}
       <div
         style={{
-          background: "#121212",
+          background: "#1e1e1e",
           paddingLeft: "19rem",
           paddingRight: "3rem",
         }}

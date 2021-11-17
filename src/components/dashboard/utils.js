@@ -68,26 +68,31 @@ export const editorsPick = [
     title: "New Music Friday...",
     description: "New Music from Omah Lay, Reekado Banks,..",
     cover: "/assets/pick.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Hot Hits Naija",
     description: "Nigeria's hottest Cover:Reekado Banks",
     cover: "/assets/hothits.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Alte Cruise",
     description: "The contemporary new wave of alternative,...",
     cover: "/assets/alte.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Gbedu",
     description: "Afrobeats' hottest singles. Cover: Niniola",
     cover: "/assets/gbedu.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Viral Hits",
     description: "Viral, trending and taking off",
     cover: "/assets/viralhits.jpeg",
+    id: Math.random(10) * 1000,
   },
 ];
 
@@ -96,26 +101,31 @@ export const focus = [
     title: "Sound Semester",
     description: "Chill afro music to study with.",
     cover: "/assets/focus1.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "lofi beats",
     description: "Beats to relax, study, and focus...",
     cover: "/assets/focus2.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Peaceful Piano",
     description: "relax and indulge with beautiful piano pieces",
     cover: "/assets/focus3.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Deep Focus",
     description: "Keep calm and focus with ambient and post-...",
     cover: "/assets/focus4.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Instrumental Study",
     description: "A soft musical backdrop for your studies.",
     cover: "/assets/focus5.jpeg",
+    id: Math.random(10) * 1000,
   },
 ];
 export const popular = [
@@ -123,26 +133,31 @@ export const popular = [
     title: "New Music Friday",
     description: "The very best in new music from around the...",
     cover: "/assets/popular1.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "OTR Vol.2",
     description: "Reekado Banks",
     cover: "/assets/popular2.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Lagos to Jozi",
     description: "Niniola, GuiltyBeatz,OSKIDO",
     cover: "/assets/popular3.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Sorry i'm Late",
     description: "Buju",
     cover: "/assets/popular4.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Love and Highlife",
     description: "The cavemen.",
     cover: "/assets/popular5.jpeg",
+    id: Math.random(10) * 1000,
   },
 ];
 
@@ -151,26 +166,31 @@ export const mood = [
     title: "Happy Hits!",
     description: "Hits to boost your mood and fill you with...",
     cover: "/assets/mood1.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Sad Songs",
     description: "Beautiful songs to break your heart...",
     cover: "/assets/mood2.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Mood Booster",
     description: "Get happy with today's dose of feel-good songs!",
     cover: "/assets/mood3.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Life Sucks",
     description: "Does school, your love life or work suck? Or ar...",
     cover: "/assets/mood4.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Chilled R&B",
     description: "Chilled R&B jams for your most relaxed moods",
     cover: "/assets/mood5.jpeg",
+    id: Math.random(10) * 1000,
   },
 ];
 
@@ -179,15 +199,18 @@ export const soundTrack = [
     title: "Top Gaming Tracks ",
     description: "The tracks that gamers love.",
     cover: "/assets/sound1.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Mood Booster",
     description: "Get happy with today's dose of feel-good songs!",
     cover: "/assets/sound2.jpeg",
+    id: Math.random(10) * 1000,
   },
   {
     title: "Disney Hits",
     description: "All of your favourite Disney hits including",
     cover: "/assets/sound3.jpeg",
+    id: Math.random(10) * 1000,
   },
 ];

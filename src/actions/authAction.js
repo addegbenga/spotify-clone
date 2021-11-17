@@ -15,14 +15,13 @@ import {
 
 import { api } from "../utils/api";
 
-
 export const loadUser = () => async (dispatch) => {
   try {
-    const response = await api.get(`/api/v1/auth/me`);
-
+    const response = await api.get("https://api.spotify.com/v1/me");
+    console.log(response);
     dispatch({
       type: LOAD_USER,
-      payload: response.data,
+      payload: response,
     });
   } catch (error) {
     dispatch({

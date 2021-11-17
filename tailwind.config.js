@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors: {
         cardBg: "#181818",
-        cardHover:"#282828"
+        cardHover:"#282828",
+        activeBg: "#1e1e1e"
       },
     },
   },
@@ -19,5 +20,7 @@ module.exports = {
       fill: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };
