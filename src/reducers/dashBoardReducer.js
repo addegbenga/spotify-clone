@@ -14,27 +14,11 @@ const initialState = {
 
 export const dashBoardReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "GET_TOKEN":
-      return {
-        ...state,
-        ...action.payload,
-        token: action.payload,
-      };
-    case "GET_TOKEN_ERROR":
-      return {
-        error: action.payload,
-      };
     case "LOAD_USER":
       return {
         ...state,
         isAuthenticated: true,
         user: action.payload,
-      };
-    case "LOGIN_USER":
-      return {
-        ...state,
-        token: action.payload,
-        isAuthenticated: true,
       };
 
     case "GET_MOOD_PLAYLISTS":
