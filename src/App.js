@@ -34,8 +34,11 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <div className="bg-black min-h-screen">
-      <RoutesPages />
-    </div>
+    <>
+      <div className="lg:hidden block ">Currently on available on desktop </div>
+      <div className="bg-black min-h-screen hidden lg:block">
+        <RoutesPages />
+      </div>
+    </>
   );
 }
