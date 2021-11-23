@@ -104,7 +104,7 @@ export const getMoodPlaylist = (offset, limit) => async (dispatch) => {
 export const getFeaturedPlaylist = (body) => async (dispatch) => {
   try {
     const response = await api.get(
-      "https://api.spotify.com/v1/browse/featured-playlists?country=NG&timestamp=2021-10-23T09&offset=7&limit=5"
+      "https://api.spotify.com/v1/browse/featured-playlists?country=SE&locale=sv_SE&timestamp=2021-10-23T09%3A00%3A00.000Z&limit=10&offset=5"
     );
     dispatch({
       type: "GET_FEATURED_PLAYLISTS",
