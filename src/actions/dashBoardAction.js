@@ -1,4 +1,6 @@
 import { api } from "../utils/api";
+import axios from "axios";
+import qs from "query-string";
 
 export const loadUser = () => async (dispatch) => {
   try {
@@ -16,6 +18,45 @@ export const loadUser = () => async (dispatch) => {
   }
 };
 
+
+export const getToken = (code) => async (dispatch) => {
+  const test = window.localStorage.getItem("verifier");
+  console.log(test);
+  const data = {
+    grant_type: "authorization_code",
+    code: code,
+    redirect_uri: `http://localhost:3000/dashboard`,
+    code_verifier: test,
+  };
+  try {
+    const response = await axios.post(
+      "https://accounts.spotify.com/api/token",
+      qs.stringify(data),
+      {
+        headers: {
+          Authorization:
+            "Basic " +
+            Buffer.from(
+              process.env.REACT_APP_CLIENT_ID +
+                ":" +
+                process.env.REACT_APP_CLIENT_SECRET
+            ).toString("base64"),
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    );
+
+    dispatch({
+      type: "GET_TOKEN",
+      payload: response,
+    });
+  } catch (error) {
+    dispatch({
+      type: "GET_TOKEN_ERROR",
+      payload: error.response,
+    });
+  }
+};
 export const getSinglePlaylist = (body) => async (dispatch) => {
   try {
     const response = await api.post(`/api/v1/auth/google`, body);
@@ -67,8 +108,7 @@ export const getMoodPlaylist = (offset, limit) => async (dispatch) => {
 export const getFeaturedPlaylist = (body) => async (dispatch) => {
   try {
     const response = await api.get(
-      "https://api.spotify.com/v1/browse/featured-playlists?country=NG&timestamp=2021-10-23T09%3A00%3A00&offset=7&limit=5",
-      body
+      "https://api.spotify.com/v1/browse/featured-playlists?country=NG&timestamp=2021-10-23T09&offset=7&limit=5"
     );
     dispatch({
       type: "GET_FEATURED_PLAYLISTS",

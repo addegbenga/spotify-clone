@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { getToken, loadUser } from "./actions/dashBoardAction";
+import { loadUser } from "./actions/dashBoardAction";
 import setAuthToken from "./utils/setAuthToken";
 import { getTokenFromUrl } from "./utils/spotify";
 import store from "./store";
@@ -22,7 +22,6 @@ export default function App() {
         payload: _token,
       });
       setAuthToken(_token);
-      dispatch(getToken(_token));
     }
     if (localStorage.token) {
       setAuthToken(localStorage.token);

@@ -23,4 +23,4 @@ export const getTokenFromUrl = () => {
     }, {});
 };
 
-export const loginUrl = `${authEndpoint}?redirect_uri=http://localhost:3000/dashboard&client_id=${process.env.REACT_APP_CLIENT_ID}&scope=${scopes}&response_type=code&show_dialog=true`;
+export const loginUrl = `${authEndpoint}?redirect_uri=http://localhost:3000/dashboard&client_id=${process.env.REACT_APP_CLIENT_ID}&scope=${scopes}&response_type=token&show_dialog=true`;
