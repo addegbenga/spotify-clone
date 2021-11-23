@@ -80,7 +80,6 @@ export default function Home() {
             <div className="grid grid-cols-5 gap-5">
               {moodCategory.map((item, index) => (
                 <div
-                  style={{ height: "16.8rem" }}
                   key={index}
                   className="p-4  flex flex-col  bg-cardBg  rounded drop-shadow-2xl hover:bg-cardHover transition duration-500 group cursor-pointer ease-in-out "
                 >
