@@ -4,7 +4,7 @@ import thunk from "redux-thunk";
 import setAuthToken from "./utils/setAuthToken";
 import rootReducer from "./reducers";
 
-// import setAuthToken from "./utils/setAuthToken";
+
 
 const initialState = {};
 
