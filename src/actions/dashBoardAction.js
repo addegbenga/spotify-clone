@@ -18,15 +18,11 @@ export const loadUser = () => async (dispatch) => {
   }
 };
 
-
-export const getToken = (code) => async (dispatch) => {
-  const test = window.localStorage.getItem("verifier");
-  console.log(test);
+export const redirect_uri = process.env.REACT_APP_REDIRECT_URI;
+export const getToken = () => async (dispatch) => {
   const data = {
-    grant_type: "authorization_code",
-    code: code,
-    redirect_uri: `http://localhost:3000/dashboard`,
-    code_verifier: test,
+    grant_type: "client_credentials",
+    redirect_uri: redirect_uri,
   };
   try {
     const response = await axios.post(

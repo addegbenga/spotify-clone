@@ -18,11 +18,13 @@ export const dashBoardReducer = (state = initialState, action) => {
       return {
         ...state,
         ...action.payload,
-        token: action.payload,
+        token: action.payload.data.access_token,
+        isAuthenticated: true,
       };
     case "GET_TOKEN_ERROR":
       return {
         error: action.payload,
+        isAuthenticated: false,
       };
     case "LOAD_USER":
       return {

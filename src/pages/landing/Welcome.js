@@ -1,5 +1,5 @@
 import React from "react";
-import { loginUrl } from "../../utils/spotify";
+import { Link } from "react-router-dom";
 export default function Welcome() {
   return (
     <div>
@@ -7,10 +7,10 @@ export default function Welcome() {
         Welcome to mood booster the home of sweet music get started now
       </div>
       <div>
-        <button className="bg-green-200">
+        <Link to="/dashboard">
           {" "}
-          <a href={loginUrl}> Login with spotify </a>
-        </button>
+          <button className="bg-green-200"> open web player</button>
+        </Link>
       </div>
     </div>
   );
