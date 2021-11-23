@@ -1,5 +1,6 @@
 
 export const authEndpoint = process.env.REACT_APP_SPOTIFY_AUTH_ENDPOINT;
+export const redirect_uri = process.env.REACT_APP_REDIRECT_URI;
 
 // stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
 
@@ -23,4 +24,4 @@ export const getTokenFromUrl = () => {
     }, {});
 };
 
-export const loginUrl = `${authEndpoint}?redirect_uri=http://localhost:3000/dashboard&client_id=${process.env.REACT_APP_CLIENT_ID}&scope=${scopes}&response_type=token&show_dialog=true`;
+export const loginUrl = `${authEndpoint}?redirect_uri=${redirect_uri}&client_id=${process.env.REACT_APP_CLIENT_ID}&scope=${scopes}&response_type=token&show_dialog=true`;
