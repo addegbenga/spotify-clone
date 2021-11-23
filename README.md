@@ -1,9 +1,9 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Authentication app</h1>
+<h1 align="center">Spotify Lite</h1>
 
 <div align="center">
-   <h1>Spotify lite personla project</h1>
+   <p>Personal project to strengthen my frontend skills</p>
 </div>
 
 
@@ -30,9 +30,6 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Express](https://expressjs.com/)
-- [Nodejs](https://nodejs.org/en/)
-- [Mongodb](https://www.mongodb.com/)
 - [Tailwind](https://tailwindcss.com/)
 - [Redux]
 
