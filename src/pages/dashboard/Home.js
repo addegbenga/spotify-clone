@@ -25,16 +25,15 @@ export default function Home() {
       <div
         style={{
           background: "#1e1e1e",
-          paddingLeft: "18rem",
-          paddingRight: "2rem",
+          // paddingLeft:"21.5rem"
         }}
-        className="py-24 w-full   min-h-screen  text-white"
+        className="py-24 2xl:pl-paddingXl 2xl:py-28 w-full 2 pl-72  pr-9  min-h-screen  text-white"
       >
         <section className="">
           {/* Popular section start*/}
 
           <div className="">
-            <h1 className="text-2xl mb-5 tracking-tight font-bold ">
+            <h1 className="text-2xl 2xl:text-3xl  mb-5 tracking-tight font-bold ">
               Editor's Pick
             </h1>
 
@@ -61,8 +60,8 @@ export default function Home() {
                   </figure>
 
                   <div className="pt-4">
-                    <h1 className="font-bold truncate mb-1">{item.name}</h1>
-                    <p className="text-xs line-clamp-2  text-white text-opacity-70">
+                    <h1 className="font-bold 2xl:text-lg truncate mb-1">{item.name}</h1>
+                    <p className="text-xs line-clamp-2 2xl:text-base text-white text-opacity-70">
                       {item.description.replace(/(<([^>]+)>)/gi, "")}
                     </p>
                   </div>
@@ -73,8 +72,8 @@ export default function Home() {
           {/* Popular section end*/}
           {/* editors chice section start*/}
           <div className="mt-12">
-            <h1 className="text-2xl tracking-tight font-bold ">Mood</h1>
-            <p className="mb-5 text-sm text-opacity-60 text-white">
+            <h1 className="text-2xl 2xl:text-3xl tracking-tight font-bold ">Mood</h1>
+            <p className="mb-5 text-sm text-opacity-60 2xl:text-base  text-white">
               playlist to match your mood
             </p>
             <div className="grid grid-cols-5 gap-5">
@@ -108,8 +107,8 @@ export default function Home() {
                     </NavLink>
                   </figure>
                   <div className="pt-4">
-                    <h1 className="font-bold mb-1 truncate">{item.name}</h1>
-                    <p className="text-xs text-white line-clamp-2 text-opacity-70">
+                    <h1 className="font-bold mb-1 2xl:text-lg truncate">{item.name}</h1>
+                    <p className="text-xs text-white  2xl:text-base  line-clamp-2 text-opacity-70">
                       {item.description.replace(/(<([^>]+)>)/gi, "")}
                     </p>
                   </div>
@@ -123,7 +122,7 @@ export default function Home() {
 
           <div className="mt-12">
             <h1 className="text-2xl tracking-tight font-bold ">Focus</h1>
-            <p className="mb-5 text-sm text-opacity-70 text-white">
+            <p className="mb-5 text-sm 2xl:text-base  text-opacity-70 text-white">
               Music to help you concentrate
             </p>
             <div className="grid grid-cols-5 gap-5">
@@ -148,8 +147,8 @@ export default function Home() {
                     </NavLink>
                   </figure>
                   <div className="pt-4">
-                    <h1 className="font-bold truncate  mb-1">{item.name}</h1>
-                    <p className="text-xs line-clamp-2  text-white text-opacity-70">
+                    <h1 className="font-bold truncate 2xl:text-lg  mb-1">{item.name}</h1>
+                    <p className="text-xs line-clamp-2 2xl:text-base   text-white text-opacity-70">
                       {item.description.replace(/(<([^>]+)>)/gi, "")}
                     </p>
                   </div>

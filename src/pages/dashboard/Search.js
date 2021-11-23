@@ -7,10 +7,8 @@ export default function Search() {
       <div
         style={{
           background: "#1e1e1e",
-          paddingLeft: "19rem",
-          paddingRight: "3rem",
         }}
-        className="py-24 w-full   min-h-screen  text-white"
+        className=" py-24 2xl:pl-paddingXl 2xl:py-28 w-full 2 pl-72  pr-9   w-full   min-h-screen  text-white"
       >
         <section className="">
           {/* editors chice section start*/}

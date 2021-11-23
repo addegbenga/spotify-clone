@@ -6,8 +6,11 @@ module.exports = {
     extend: {
       colors: {
         cardBg: "#181818",
-        cardHover:"#282828",
-        activeBg: "#1e1e1e"
+        cardHover: "#282828",
+        activeBg: "#1e1e1e",
+      },
+      padding: {
+        paddingXl: "21.5rem",
       },
     },
   },
@@ -16,11 +19,9 @@ module.exports = {
       backgroundColor: ["active", "group-focus", "focus"],
       scale: ["group-hover"],
       translate: ["group-hover"],
-      stroke: ['hover', 'focus'],
-      fill: ['hover', 'focus'],
+      stroke: ["hover", "focus"],
+      fill: ["hover", "focus"],
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

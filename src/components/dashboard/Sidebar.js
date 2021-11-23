@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar(props) {
   return (
-    <div className="w-64 fixed bg-black z-30  h-screen overflow-y-auto ">
+    <div className="w-64 2xl:w-80 fixed bg-black z-30  h-screen overflow-y-auto ">
       <div className="p-1.5">
-        <div className="my-5 ml-3.5">
+        <div className="my-5 2xl:mb-7 ml-3.5">
           <svg
             width="138"
             height="44"
@@ -27,7 +27,7 @@ export default function Sidebar(props) {
             end
             to="/dashboard"
             className={({ isActive }) =>
-              "flex w-full p-2.5 px-3 items-center  rounded text-sm  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
+              "flex w-full p-2.5 px-3 items-center  rounded text-sm 2xl:text-lg  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
               (isActive
                 ? " fill-current stroke-current text-white bg-white bg-opacity-10   activeBg nav-link text-opacity-100 text-sm"
                 : "stroke-current")
@@ -48,7 +48,7 @@ export default function Sidebar(props) {
             end
             to="/dashboard/search"
             className={({ isActive }) =>
-              "flex w-full p-2.5 px-3 items-center  rounded text-sm  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
+              "flex w-full p-2.5 px-3 items-center 2xl:text-lg   rounded text-sm  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
               (isActive
                 ? " stroke-current text-white bg-white bg-opacity-10 nav-link text-opacity-100 "
                 : "stroke-current text-white")
@@ -76,7 +76,7 @@ export default function Sidebar(props) {
             end
             to="/dashboard/library"
             className={({ isActive }) =>
-              "flex w-full p-2.5 px-3 items-center  rounded text-sm  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
+              "flex w-full p-2.5 px-3 items-center 2xl:text-lg   rounded text-sm  transition duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
               (isActive
                 ? " bg-white bg-opacity-10 stroke-current text-white nav-link text-opacity-100 "
                 : " stroke-current")
@@ -100,7 +100,7 @@ export default function Sidebar(props) {
               end
               to="/dashboard/create_playlist"
               className={({ isActive }) =>
-                "flex w-full p-2.5 px-3 items-center  rounded transition text-sm  duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
+                "flex w-full p-2.5 px-3 items-center 2xl:text-lg   rounded transition text-sm  duration-400 ease-in-out text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
                 (isActive
                   ? " bg-white bg-opacity-10 nav-link text-opacity-100"
                   : "")
@@ -116,7 +116,7 @@ export default function Sidebar(props) {
               end
               to="/dashboard/fav"
               className={({ isActive }) =>
-                " flex w-full p-2.5 px-3 items-center  rounded transition duration-400 ease-in-out text-sm text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
+                " flex w-full p-2.5 px-3 items-center 2xl:text-lg   rounded transition duration-400 ease-in-out text-sm text-white hover:text-opacity-100 text-opacity-70 group  text-white " +
                 (isActive
                   ? " bg-white nav-link bg-opacity-10 text-opacity-100 "
                   : "")

@@ -7,7 +7,7 @@ export default function Navbar(props) {
   
   return (
     <div style={{ paddingLeft: "16rem" }} className=" fixed w-full  z-20">
-      <div style={{ background: "#111111" }} className="px-10 py-3">
+      <div style={{ background: "#111111" }} className="px-10 2xl:px-20 py-3 2xl:py-6">
         <div className="flex justify-between items-center">
           <div className="flex text-white text-opacity-80 items-center">
             <div className="mr-5 bg-black shadow-2xl cursor-pointer p-1 rounded-full">
@@ -17,7 +17,7 @@ export default function Navbar(props) {
               <FiChevronRight size={27} />
             </div>
             {match && (
-              <div className=" ml-3 w-96 relative ">
+              <div className=" ml-3 w-96 lg:w-64 relative ">
                 <input
                   type="search"
                   className="p-2.5 w-7 placeholder-black placeholder-opacity-70 pl-10 text-sm text-opacity-70 outline-none w-full rounded-full text-black"
@@ -41,12 +41,12 @@ export default function Navbar(props) {
               </div>
             )}
           </div>
-          <div>
+          <div className="2xl:-mr-8">
             <button className="text-white border border-white px-8 py-2 rounded-full text-sm tracking-widest">
               UPGRADE
             </button>
             <button className="bg-white  rounded-full ml-6 text-sm tracking-wider px-5 py-1.5">
-              Adeyemi
+              Anon
             </button>
           </div>
         </div>
