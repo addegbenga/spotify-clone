@@ -1,7 +1,8 @@
 const initialState = {
   token: localStorage.getItem("token"),
   isAuthenticated: false,
-  playlists: [],
+  singlePlaylist: [],
+  singlePlaylistDetails: [],
   singleCategory: [],
   recentlyPlayed: [],
   moodCategory: [],
@@ -26,19 +27,6 @@ export const dashBoardReducer = (state = initialState, action) => {
         error: action.payload,
         isAuthenticated: false,
       };
-    case "LOAD_USER":
-      return {
-        ...state,
-        isAuthenticated: true,
-        user: action.payload,
-      };
-    case "LOGIN_USER":
-      return {
-        ...state,
-        token: action.payload,
-        isAuthenticated: true,
-      };
-
     case "GET_MOOD_PLAYLISTS":
       return {
         ...state,
@@ -70,14 +58,16 @@ export const dashBoardReducer = (state = initialState, action) => {
         error: action.payload,
       };
 
-    case "FETCH_SINGLE_PLAYLIST":
+    case "GET_SINGLE_PLAYLISTS":
       return {
         ...state,
+        ...action.payload,
         singlePlaylist: action.payload,
+        singlePlaylistDetails: "",
       };
     // case "LOAD_USER_ERROR":
     case "LOGIN_ERROR":
-    case "FETCH_SINGLE_PLAYLIST_ERROR":
+    case "GET_SINGLE_PLAYLIST_ERROR":
       return {
         ...state,
         error: action.payload,

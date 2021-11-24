@@ -5,7 +5,7 @@ const Home = React.lazy(() => import("./Home.js"));
 const Library = React.lazy(() => import("./Library.js"));
 const Search = React.lazy(() => import("./Search.js"));
 const LikedSong = React.lazy(() => import("./LikedSong.js"));
-// const Playlist = React.lazy(() => import("./Playlist.js"));
+const Playlist = React.lazy(() => import("./Playlist.js"));
 const CreatePlaylist = React.lazy(() => import("./CreatePlaylist"));
 
 export default function Index() {
@@ -13,6 +13,10 @@ export default function Index() {
     {
       path: "",
       element: <Home />,
+    },
+    {
+      path: "playlist/:id",
+      element: <Playlist />,
     },
 
     {

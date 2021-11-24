@@ -21,7 +21,7 @@ export default function index() {
         <Route path="*" element={<NotFound />} />
       </Route>
       <Route element={<MyDashboard />}>
-        <Route path="dashboard/*" element={<DashBoardComponents />}></Route>
+        <Route path="dashboard//*" element={<DashBoardComponents />}></Route>
       </Route>
     </Routes>
   );

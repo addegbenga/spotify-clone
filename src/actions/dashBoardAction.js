@@ -53,9 +53,11 @@ export const getToken = () => async (dispatch) => {
     });
   }
 };
-export const getSinglePlaylist = (body) => async (dispatch) => {
+export const getSinglePlaylist = (id) => async (dispatch) => {
   try {
-    const response = await api.post(`/api/v1/auth/google`, body);
+    const response = await api.get(
+      `https://api.spotify.com/v1/playlists/${id}/tracks`
+    );
     dispatch({
       type: "GET_SINGLE_PLAYLISTS",
       payload: response.data,
@@ -104,7 +106,7 @@ export const getMoodPlaylist = (offset, limit) => async (dispatch) => {
 export const getFeaturedPlaylist = (body) => async (dispatch) => {
   try {
     const response = await api.get(
-      "https://api.spotify.com/v1/browse/featured-playlists?country=NG&locale=en_NG&timestamp=2021-10-23T09%3A00%3A00.000Z&limit=5&offset=1"
+      "https://api.spotify.com/v1/browse/featured-playlists?timestamp=2014-10-23T09%3A00%3A00.000Z&limit=5&offset=4"
     );
     dispatch({
       type: "GET_FEATURED_PLAYLISTS",
