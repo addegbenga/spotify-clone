@@ -8,6 +8,7 @@ module.exports = {
         cardBg: "#181818",
         cardHover: "#282828",
         activeBg: "#1e1e1e",
+        spotifyGreen:"#64d862"
       },
       padding: {
         paddingXl: "21.5rem",
