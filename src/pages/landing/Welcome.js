@@ -18,7 +18,7 @@ export default function Welcome() {
           </h1>
           <button
             style={{ background: "#d8412c" }}
-            className="px-12 text-sm tracking-wider rounded-full py-3 mt-10"
+            className="px-12 text-sm tracking-wider rounded-full py-3 mt-10  transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"
           >
             START A FREE TRIAL
           </button>
@@ -51,7 +51,7 @@ export default function Welcome() {
           Start listening to the best new releases.
         </p>
         <button
-          className="px-14 tracking-wider py-3.5 text-sm rounded-full"
+          className="px-14 tracking-wider  py-3.5  transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out text-sm rounded-full"
           style={{ background: "#64d862", color: "#2941AB" }}
         >
           <Link to="/dashboard"> OPEN WEB PLAYER</Link>
@@ -82,31 +82,31 @@ export default function Welcome() {
 
             <div className="flex flex-col mr-20">
               <h1 className="text-white text-opacity-60 mb-3">Company</h1>
-              <a className="text-white  mb-4 " href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4 " href="#div">
                 About
               </a>
-              <a className="text-white  mb-4 " href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400  mb-4 " href="#div">
                 Jobs
               </a>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400  mb-4" href="#div">
                 For the Record
               </a>
             </div>
             <div className="flex flex-col mr-20">
               <h1 className="text-white text-opacity-60  mb-3">Communities</h1>
-              <a className="text-white   mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400   mb-4" href="#div">
                 For Artists
               </a>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400  mb-4" href="#div">
                 Developers
               </a>
-              <a className="text-white   mb-4" href="#div">
+              <a className="text-white   hover:text-spotifyGreen ease-in-out transition duration-400  mb-4" href="#div">
                 Advertising
               </a>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400  mb-4" href="#div">
                 Investors
               </a>
-              <a className="text-white mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4" href="#div">
                 Vendors
               </a>
             </div>
@@ -114,25 +114,25 @@ export default function Welcome() {
               <h1 className="text-white text-opacity-60   mb-3">
                 Useful Links
               </h1>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4" href="#div">
                 Support
               </a>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4" href="#div">
                 Web Player
               </a>
-              <a className="text-white  mb-4" href="#div">
+              <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4" href="#div">
                 Free Mobile App
               </a>
             </div>
           </div>
           <div className="text-white flex">
-            <div className="h-12 flex items-center justify-center  w-12 rounded-full bg-white bg-opacity-10">
+            <div className="h-12 flex items-center  hover:text-spotifyGreen ease-in-out transition duration-400 pointer justify-center  w-12 rounded-full bg-white bg-opacity-10">
               <AiOutlineInstagram size={24} />
             </div>
-            <div className="h-12 flex items-center justify-center mx-2 w-12 rounded-full bg-white bg-opacity-10">
+            <div className="h-12 flex  hover:text-spotifyGreen ease-in-out transition duration-400 items-center pointer justify-center mx-2 w-12 rounded-full bg-white bg-opacity-10">
               <FaTwitter size={24} />
             </div>
-            <div className="h-12 flex items-center justify-center w-12 rounded-full bg-white bg-opacity-10">
+            <div className="h-12 flex  hover:text-spotifyGreen ease-in-out transition duration-400 items-center pointer justify-center w-12 rounded-full bg-white bg-opacity-10">
               <FaFacebookF size={24} />
             </div>
           </div>
@@ -140,22 +140,22 @@ export default function Welcome() {
 
         <div className="py-10 flex justify-between text-xs items-center ">
           <div>
-            <a className="text-white text-opacity-50 mr-8 text-xs" href="#div">
+            <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs" href="#div">
               Legal
             </a>
-            <a className="text-white text-opacity-50 mr-8 text-xs " href="#div">
+            <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs " href="#div">
               Privacy Center
             </a>
-            <a className="text-white text-opacity-50 mr-8 text-xs" href="#div">
+            <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs" href="#div">
               Privacy Policy
             </a>
-            <a className="text-white text-opacity-50 mr-8 text-xs" href="#div">
+            <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs" href="#div">
               Cookies
             </a>
-            <a className="text-white text-opacity-50 mr-8 text-xs" href="#div">
+            <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs" href="#div">
               About Ads
             </a>
-            <a className="text-white text-opacity-50 mr-8 text-xs" href="#div">
+            <a className="text-white text-opacity-50 mr-8 text-xs  hover:text-spotifyGreen ease-in-out transition duration-400" href="#div">
               Additional CA Privacy Disclosures
             </a>
           </div>
