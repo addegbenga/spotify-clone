@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         cardBg: "#181818",
         cardHover: "#282828",
+        musicTabHover:"#3a3a3a",
         activeBg: "#1e1e1e",
         spotifyGreen:"#64d862"
       },
