@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BsFillPlayFill } from "react-icons/bs";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { IoTimeOutline } from "react-icons/io5";
 
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { getSinglePlaylist } from "../../actions/dashBoardAction";
@@ -21,12 +22,6 @@ export default function Playlist() {
   return (
     <div
       style={{
-        // background: "#1e1e1e",
-        // background:"#273ca0",
-        // paddingLeft: "19rem",
-        // paddingRight: "3rem",
-        // background:
-        //    linear-gradient"(to bottom, #273ca0, #2d347d, #2c2d5b, #27253c, #1e1e1e)"
         backgroundImage: `linear-gradient(to top, #1e1e1e ,  #1e1e1e 90% ,   #273ca0   )`,
       }}
       className="pt-24 pb-10  2xl:pl-paddingXl 2xl:py-28  pl-72  pr-9     min-h-screen  text-white"
@@ -72,27 +67,32 @@ export default function Playlist() {
       <section className="mt-10 ">
         <table className="table-fixed  ">
           <thead>
-            <tr className="border-b  text-sm  text-opacity-70 text-white ">
+            <tr className="border-b border-opacity-10  text-sm  text-opacity-70 text-white ">
               <th className=" w-80 text-left pb-2 pl-8  ">#TITLE</th>
               <th className=" w-80 text-left pb-2 ">ALBUM</th>
               <th className=" w-80 text-left pb-2 ">DATE ADDED</th>
-              <th className="text-left pb-2 pr-20">TIME</th>
+              <th className="text-left pb-2 pr-20">
+                <IoTimeOutline size={20} />
+              </th>
             </tr>
           </thead>
           {singlePlaylist.items?.map((item, index) => (
             <tbody key={index}>
-              <tr className="group">
+              <tr className="group ">
                 <td
                   className="
-                   group-hover:bg-musicTabHover rounded-l py-2 top-3 bottom-4   relative "
+                   group-hover:bg-musicTabHover transition duration-400 group cursor-pointer ease-in-out  rounded-l py-2 top-3 bottom-4   relative "
                 >
                   <span
                     className={` ${
                       index < 9 ? "left-4 top-3.5" : "left-2 top-3.5"
-                    } text-white text-opacity-70 absolute text-left `}
+                    } text-white text-opacity-70 absolute group-hover:opacity-0 text-left `}
                   >
                     {index + 1}
                   </span>
+                  <div className="text-white text-opacity-70 absolute opacity-0 group-hover:opacity-100 text-left left-2 top-4">
+                    <BsFillPlayFill size={20} />
+                  </div>
                   <div className="flex items-center pl-10 ">
                     <img
                       className="h-9 w-9"
@@ -100,7 +100,7 @@ export default function Playlist() {
                       alt="viral"
                     />
                     <div className="text-sm ml-3 mt-1.5">
-                      <p className="leading-none truncate w-96">
+                      <p className="leading-none truncate w-96 pr-32">
                         {item.track.name}
                       </p>
                       <span className="text-white  text-opacity-70">
@@ -113,19 +113,19 @@ export default function Playlist() {
                 <td
                   className="
              
-                  relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover text-opacity-70"
+                  relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover transition duration-400 group cursor-pointer ease-in-out  text-opacity-70"
                 >
                   {item.track.album.name}
                 </td>
                 <td
                   className="
-                   relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover text-opacity-70"
+                   relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover transition duration-400 group cursor-pointer ease-in-out  text-opacity-70"
                 >
                   1 day ago
                 </td>
                 <td
                   className="
-                   relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover rounded-r text-opacity-70"
+                   relative top-3 bottom-4 py-2 text-white text-sm group-hover:bg-musicTabHover transition duration-400 group cursor-pointer ease-in-out  rounded-r text-opacity-70"
                 >
                   2:31
                 </td>
