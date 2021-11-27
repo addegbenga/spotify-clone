@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Sidebar(props) {
   return (
-    <div className="w-64 2xl:w-80 fixed bg-black z-30  h-screen overflow-y-auto ">
+    <div className="w-64 2xl:w-80 fixed bg-black z-30 hidden lg:block h-screen overflow-y-auto ">
       <div className="p-1.5">
         <div className="my-5 2xl:mb-7 ml-3.5">
           <svg
