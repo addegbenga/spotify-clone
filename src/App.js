@@ -20,9 +20,6 @@ export default function App() {
 
   return (
     <>
-      {/* <div className="lg:hidden block text-3xl flex justify-center items-center p-20 text-center  ">
-        Currently available on desktop mobile view coming soon...{" "}
-      </div> */}
       <div className="bg-black min-h-screen ">
         <RoutesPages />
       </div>
