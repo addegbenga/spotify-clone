@@ -1,6 +1,14 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .card-scroll {
     position: static !important;
   }
+}
 
+.scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollbar::-webkit-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }

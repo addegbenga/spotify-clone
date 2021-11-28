@@ -2,29 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
+import "./style.css"
 export default function Welcome() {
   return (
     <>
       <div
-        className="flex items-center justify-center "
+        className="flex lg:items-center lg:justify-center premium-section "
         style={{ background: "#f8ccd2", height: "100%", minHeight: "80vh" }}
       >
-        <div className="text-white flex flex-col items-center mt-12 ">
+        <div className="text-white flex flex-col items-center mt-44 lg:mt-12 ">
           <h1
-            style={{ color: "#d8412c", fontSize: "78px" }}
-            className="text-7xl font-extrabold"
+            style={{ color: "#d8412c",  }}
+            className="lg:text-7xl text-4xl text-center lg:text-right tracking-tighter lg:tracking-normal font-extrabold"
           >
             Go Premium. Be happy.
           </h1>
           <button
             style={{ background: "#d8412c" }}
-            className="px-12 text-sm tracking-wider rounded-full py-3 mt-10  transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"
+            className="px-12 text-sm tracking-wider rounded-full py-4 lg:py-3 mt-10  transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"
           >
             START A FREE TRIAL
           </button>
           <p
-            className="text-xs font-thin mt-10"
-            style={{ color: "#d8412c", fontFamily: "sans-serif" }}
+            className="text-sm px-5 lg:px-0 text-center lg:text-left mt-10"
+            style={{ color: "#d8412c" }}
           >
             * Terms and conditions apply. Open only to users who haven't already
             tried Premium.
@@ -39,19 +40,19 @@ export default function Welcome() {
       </div>
       <div
         style={{ height: "100%", minHeight: "90vh", background: "#2941AB" }}
-        className="p-20 pt-32 bg-blue-400  "
+        className="lg:p-20 flex lg:justify-center webplayer-section items-center pt-32 lg:items-start flex-col lg:block lg:pt-32 bg-blue-400  "
       >
-        <h1 style={{ color: "#64d862" }} className="text-6xl font-semibold">
+        <h1 style={{ color: "#64d862" }} className="lg:text-6xl  tracking-tighter lg:tracking-normal text-4xl text-center lg:text-left font-semibold">
           Looking for music?
         </h1>
         <p
           style={{ color: "#59c571" }}
-          className="py-12 text-base tracking-wider"
+          className="lg:py-12 py-5 tracking-wider lg:text-xl text-base text-center lg:text-left "
         >
           Start listening to the best new releases.
         </p>
         <button
-          className="px-14 tracking-wider  py-3.5  transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out text-sm rounded-full"
+          className="lg:px-14 px-7  py-4   tracking-wider  lg:py-3.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-sm rounded-full"
           style={{ background: "#64d862", color: "#2941AB" }}
         >
           <Link to="/dashboard"> OPEN WEB PLAYER</Link>
@@ -61,11 +62,11 @@ export default function Welcome() {
       {/* footer section */}
       <section
         style={{ height: "100%", minHeight: "75vh" }}
-        className="bg-black h-full px-20  flex flex-col justify-between pt-20 "
+        className="bg-black h-full lg:px-20  flex flex-col justify-between pt-10 lg:pt-20 "
       >
-        <div className="  flex justify-between">
-          <div className="flex justify-between ">
-            <div className="mr-14 -mt-4">
+        <div className="  flex lg:flex-row  flex-col pl-4 lg:pl-0 justify-between">
+          <div className="flex lg:flex-row  flex-col lg:justify-between ">
+            <div className="lg:mr-14 lg:-mt-4">
               <svg
                 width="138"
                 height="44"
@@ -80,7 +81,7 @@ export default function Welcome() {
               </svg>
             </div>
 
-            <div className="flex flex-col mr-20">
+            <div className="flex pt-5 lg:pt-0 flex-col lg:mr-20">
               <h1 className="text-white text-opacity-60 mb-3">Company</h1>
               <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400 mb-4 " href="#div">
                 About
@@ -92,7 +93,7 @@ export default function Welcome() {
                 For the Record
               </a>
             </div>
-            <div className="flex flex-col mr-20">
+            <div className="flex pt-5 lg:pt-0 flex-col lg:mr-20">
               <h1 className="text-white text-opacity-60  mb-3">Communities</h1>
               <a className="text-white  hover:text-spotifyGreen ease-in-out transition duration-400   mb-4" href="#div">
                 For Artists
@@ -110,7 +111,7 @@ export default function Welcome() {
                 Vendors
               </a>
             </div>
-            <div className="flex flex-col">
+            <div className="flex pt-5 lg:pt-0 flex-col">
               <h1 className="text-white text-opacity-60   mb-3">
                 Useful Links
               </h1>
@@ -125,7 +126,7 @@ export default function Welcome() {
               </a>
             </div>
           </div>
-          <div className="text-white flex">
+          <div className="text-white pt-20 lg:pt-0 flex">
             <div className="h-12 flex items-center  hover:text-spotifyGreen ease-in-out transition duration-400 pointer justify-center  w-12 rounded-full bg-white bg-opacity-10">
               <AiOutlineInstagram size={24} />
             </div>
@@ -138,7 +139,7 @@ export default function Welcome() {
           </div>
         </div>
 
-        <div className="py-10 flex justify-between text-xs items-center ">
+        <div className="py-10 flex lg:justify-between pl-4 lg:pl-0 flex-wrap text-xs items-center ">
           <div>
             <a className="text-white text-opacity-50 mr-8  hover:text-spotifyGreen ease-in-out transition duration-400 text-xs" href="#div">
               Legal
@@ -159,8 +160,8 @@ export default function Welcome() {
               Additional CA Privacy Disclosures
             </a>
           </div>
-          <div className="-mt-8">
-            <h1 className="text-opacity-50 text-white pb-2">USA</h1>
+          <div className="lg:-mt-8">
+            <h1 className="text-opacity-50 text-white lg:pb-2">USA</h1>
             <span className="text-opacity-50 text-white ">
               &copy; 2021 Spotify Ad
             </span>

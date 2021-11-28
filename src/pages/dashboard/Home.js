@@ -39,7 +39,7 @@ export default function Home() {
             <h1 className=" text-xl lg:text-2xl 2xl:text-3xl mb-1.5 ml-5 lg:ml-0 pt-24 lg:pt-0 lg:mb-5 tracking-tight font-bold ">
               Editor's Picks
             </h1>
-            <div className=" relative overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
+            <div className=" relative scrollbar overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
               <div className="flex   w-full lg:grid lg:grid-cols-5  lg:gap-5">
                 {editorspick.map((item, index) => (
                   <NavLink key={index} to={`playlist/${item.id}`}>
@@ -85,7 +85,7 @@ export default function Home() {
             <p className=" lg:mb-3 hidden lg:block text-sm text-opacity-60 2xl:text-base  text-white">
               playlist to match your mood
             </p>
-            <div className=" relative overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
+            <div className=" relative scrollbar overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
               <div className="flex   w-full lg:grid lg:grid-cols-5  lg:gap-5">
                 {moodCategory.map((item, index) => (
                   <NavLink key={index} to={`playlist/${item.id}`} end>
@@ -136,7 +136,7 @@ export default function Home() {
             <p className="lg:mb-3 hidden lg:block text-sm text-opacity-60 2xl:text-base  text-white">
               Music to help you concentrate
             </p>
-            <div className="relative overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
+            <div className="relative scrollbar overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
               <div className="flex   w-full lg:grid lg:grid-cols-5  lg:gap-5">
                 {focusCategory.map((item, index) => (
                   <NavLink key={index} to={`playlist/${item.id}`} end>
@@ -187,7 +187,7 @@ export default function Home() {
             <p className="lg:mb-3 hidden lg:block text-sm text-opacity-60 2xl:text-base  text-white">
               Music to help you concentrate
             </p>
-            <div className="relative overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
+            <div className="relative scrollbar overflow-y-hidden h-52 lg:h-auto  overflow-x-scroll lg:overflow-x-hidden  ">
               <div className="flex   w-full lg:grid lg:grid-cols-5  lg:gap-5">
                 {moodCategory.map((item, index) => (
                   <NavLink key={index} to={`playlist/${item.id}`} end>

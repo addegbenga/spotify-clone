@@ -3,13 +3,14 @@ import React from "react";
 // import { BiChevronDown } from "react-icons/bi";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useMatch } from "react-router-dom";
+import { GoThreeBars } from "react-icons/go";
 export default function Navbar(props) {
   const match = useMatch("/dashboard/search");
 
   return (
     <>
       <div className="fixed lg:hidden w-full z-20 bg-black">
-        <div className="flex items-center justify-between pl-4 lg:w-5/6 py-3  lg:py-6 m-auto">
+        <div className="flex items-center justify-between px-4 lg:w-5/6 py-3  lg:py-6 m-auto">
           <svg
             width="138"
             height="44"
@@ -22,6 +23,9 @@ export default function Navbar(props) {
               fill="white"
             />
           </svg>
+          <div className="lg:hidden">
+            <GoThreeBars size={26} color="white" />
+          </div>
         </div>
       </div>
       <div className=" fixed w-full hidden lg:block lg:pl-64 z-20">

@@ -1,3 +1,13 @@
-body{
-    color: #3a3a3a;
+body {
+  color: #3a3a3a;
+}
+
+@media screen and (max-width: 768px) {
+  .webplayer-section {
+    min-height: 50vh !important;
+  }
+
+  .premium-section {
+    min-height: 70vh !important;
+  }
 }

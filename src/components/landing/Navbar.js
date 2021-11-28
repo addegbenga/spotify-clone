@@ -1,11 +1,12 @@
 import React from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { BiChevronDown } from "react-icons/bi";
+import { GoThreeBars } from "react-icons/go";
 
 export default function Navbar() {
   return (
     <div>
-      <div className="flex items-center justify-between w-5/6 py-6 m-auto">
+      <div className="flex items-center justify-between lg:w-5/6 py-5 px-4  lg:px-0 lg:m-auto">
         <svg
           width="138"
           height="44"
@@ -18,7 +19,11 @@ export default function Navbar() {
             fill="white"
           />
         </svg>
-        <div className="flex items-center">
+        <div className="lg:hidden">
+          <GoThreeBars size={28} color="white" />
+        </div>
+
+        <div className="hidden lg:flex items-center">
           <div>
             <a
               className="text-white hover:text-spotifyGreen  mr-10"
