@@ -13,7 +13,14 @@ export default function index() {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div>loading....</div>}>
+            <Suspense
+              fallback={
+                <div>
+                  {" "}
+                  <img src="/assets/loder.svg" alt="loader" />
+                </div>
+              }
+            >
               <LazyLandingComponents />
             </Suspense>
           }
